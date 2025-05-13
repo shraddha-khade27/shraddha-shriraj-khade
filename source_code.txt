@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviation Security Toolkit Demo</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 30px;
+            background-color: #f9fafc;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        .tool-container {
+            background-color: #ffffff;
+            border: 1px solid #dcdcdc;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .tool-container:hover {
+            transform: scale(1.02);
+        }
+
+        .tool-header {
+            font-weight: 600;
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            color: #1a73e8;
+        }
+
+        .output-box {
+            border: 1px solid #b0b0b0;
+            padding: 10px;
+            margin-top: 15px;
+            background-color: #f1f5f9;
+            font-size: 0.9em;
+            border-radius: 5px;
+            white-space: pre-wrap;
+        }
+
+        button {
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 0.9em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #155ab6;
+        }
+
+        .output-title {
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Aviation Security Toolkit Demo</h1>
+
+    <div class="tool-container">
+        <div class="tool-header">ADS-B Analyzer</div>
+        <button onclick="simulateADSBSpoof()">Simulate ADS-B Spoof</button>
+        <div id="adsb-output" class="output-box">
+            <div class="output-title">Analysis Results:</div>
+        </div>
+    </div>
+
+    <div class="tool-container">
+        <div class="tool-header">WiFi Scanner</div>
+        <button onclick="simulateWiFiScan()">Simulate WiFi Scan</button>
+        <div id="wifi-output" class="output-box">
+            <div class="output-title">Scan Report:</div>
+        </div>
+    </div>
+
+    <div class="tool-container">
+        <div class="tool-header">Maintenance Auditor</div>
+        <button onclick="simulateMaintenanceAudit()">Simulate Maintenance Audit</button>
+        <div id="maintenance-output" class="output-box">
+            <div class="output-title">Audit Findings:</div>
+        </div>
+    </div>
+
+    <script>
+        function simulateADSBSpoof() {
+            const outputDiv = document.getElementById('adsb-output');
+            outputDiv.innerHTML = `<div class="output-title">Analysis Results:</div>
+                                 <p>🚨 ALERT: Potential ADS-B spoofing detected!</p>
+                                 <p>• Aircraft ID: XYZ123</p>
+                                 <p>• Reported Altitude: 15000 ft</p>
+                                 <p>• Expected Altitude: 10000 ft</p>
+                                 <p>• Anomaly Score: 0.92 (High probability)</p>`;
+        }
+
+        function simulateWiFiScan() {
+            const outputDiv = document.getElementById('wifi-output');
+            outputDiv.innerHTML = `<div class="output-title">Scan Report:</div>
+                                 <p>⚠️ Vulnerabilities Found:</p>
+                                 <p>• Open WiFi Access Point: 'Free_WiFi' (No encryption)</p>
+                                 <p>• Unencrypted Communication: Detected on port 8080 (HTTP traffic)</p>
+                                 <p>• Rogue Device Detected: MAC Address AA:BB:CC:DD:EE:FF</p>`;
+        }
+
+        function simulateMaintenanceAudit() {
+            const outputDiv = document.getElementById('maintenance-output');
+            outputDiv.innerHTML = `<div class="output-title">Audit Findings:</div>
+                                 <p>🔍 Security Issues:</p>
+                                 <p>• Weak Credentials: Default password 'admin' is active on user 'tech'</p>
+                                 <p>• Outdated Software: System version 1.0 (Vulnerable to CVE-2023-XXXX)</p>
+                                 <p>• Exposed Service: Telnet service (port 23) is enabled</p>`;
+        }
+    </script>
+
+</body>
+
+</html>
