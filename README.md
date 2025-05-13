@@ -1,15 +1,8 @@
-Airlines Hacking: This research paper examines critical vulnerabilities in modern aviation systems, focusing on three key areas: Automatic Dependent Surveillance-Broadcast (ADS-B) systems, in-flight wifi networks, and maintenance system exploits . ADS-B is essential for modern air traffic control but lacks encryption and authentication, making it susceptible to spoofing and jamming. Studies show that attackers can inject false aircraft data using inexpensive SDR (Software Defined Radio) hardware. Machine learning models, such as Support Vector Machines, have achieved 83% accuracy in detecting spoofed ADS-B messages.
+I am Shraddha shriraj khade, a cybersecurity enthusiast driven by a passion for understanding emerging threats and developing practical tools to address them. My primary interest lies in analyzing how modern cyber attacks operate — particularly in the context of AI systems — and crafting solutions that enhance their security.
 
-References:1.Gartner. (2023). "Information Security and Risk Management Market Analysis." Market Research Report. [Provides market projections reaching $314 billion by 2028 with CAGR of 10.1%] 
+As part of this commitment, I developed a project titled Prompt Injection Attack on AI System. The project focuses on identifying and demonstrating vulnerabilities in AI models that can be exploited through maliciously crafted inputs, known as prompt injections. These attacks manipulate the behavior of language models by embedding deceptive instructions within seemingly benign user inputs, potentially leading to unintended or harmful outputs.
 
-2.European Union Aviation Safety Agency (EASA). (2023). "Cybersecurity Regulatory Framework for Aviation." Technical Publication. [Details standards DO-326A, ED-202A, DO-355, and ED-205 for avionics cybersecurity certifications] 
+To explore this, I created a basic tool that simulates such attacks and helps detect patterns that might indicate a prompt injection attempt. It analyzes prompt structure, flags abnormal input sequences, and evaluates how these inputs influence model behavior. The goal is to build awareness around this emerging threat and to lay the groundwork for defenses against AI-specific attack vectors.
 
-3.Federal Aviation Administration (FAA). (2024). "Aircraft Network Security Program (ANSP) Guidelines." Regulatory Document. [Outlines regulatory requirements for aviation cybersecurity] 
+While still in its early stages, this project highlights the importance of securing AI systems and contributes to the broader effort of building safer, more resilient technologies. It reflects my hands-on approach to learning and my dedication to solving contemporary cybersecurity challenges.
 
-4.Atlantic Council. (2024). "Aviation Cybersecurity Risk Management Report." Industry Analysis. [Comprehensive analysis of cybersecurity risks in aviation systems] 
-
-5.Eurocontrol. (2024). "Cyber Security Report: Evolution of Aviation Cyber Threats." Annual Report. [Analysis of current cyber threat landscape in aviation]  6.American Institute of Aeronautics and Astronautics (AIAA). (2024). "Cybersecurity in Aviation." Conference Proceedings, AIAA Aviation Forum and ASCEND 2024. [Collection of latest research in aviation cybersecurity] 
-
-7.IEEE/ACM. (2024). "Threat Model and Construction Strategy on ADS-B Attack Data." Technical Paper. [Analysis of ADS-B security vulnerabilities and attack patterns] 
-
-8.Journal of Aviation Security. (2024). "Cyber-Security Challenges in Aviation Industry: A Review." Research Paper. [Comprehensive review of cyber-security attacks and trends] 
